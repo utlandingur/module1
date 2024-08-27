@@ -1,7 +1,19 @@
-* body {
-  background-color: black;
+body {
   height: 100vh;
   font-family: Basis Grotesque Pro, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 a {
   text-decoration: none;
@@ -11,9 +23,7 @@ ul {
   display: flex;
   justify-self: flex-end;
   width: 300px;
-  margin-top: auto;
   border-radius: 20px;
-  padding: 20px;
   transition: width 0.3s ease-out, background-color 0.3s ease-out,
     font-size 0.3s ease-out;
   font-size: 20px;
@@ -22,6 +32,8 @@ ul {
 
 nav ul:hover {
   width: 305px;
+  height: fit-content;
+  padding: 5px;
   background-color: rgba(255, 209, 0, 0.5);
   font-size: 21px;
 }
@@ -38,7 +50,8 @@ li {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   height: 65px;
   border-radius: 10px;
   position: fixed;
@@ -47,22 +60,14 @@ header {
   right: 0;
   z-index: 1;
   width: 100%;
-}
-
-img {
-  max-width: 100px;
-  transform: rotateY(180deg);
-  margin-left: 20px;
+  padding: 10px;
 }
 
 nav {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding-top: 20px;
-  margin-top: 5px;
+  justify-content: flex-end;
+  width: 80%;
   height: 50px;
-  margin-right: 25px;
 }
 
 .logo-container {
@@ -70,68 +75,65 @@ nav {
   bottom: 0;
 }
 
-.hummingbird {
-  width: 100%;
-  margin: auto;
-  text-align: left;
+.info1 {
+  gap: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 600px;
-  margin-top: 200px;
+  margin: 0 24px;
 }
 
-.hummingbird h1 {
-  font-size: 60px;
-  padding-bottom: 25px;
-  margin-bottom: 0;
-  word-spacing: 3px;
+h2 {
+  font-size: 48px;
 }
 
-.hummingbird h4 {
-  font-weight: lighter;
-  font-size: 20px;
-  word-spacing: 3px;
-  padding-bottom: 200px;
+.small-title {
+  font-size: 16px;
+}
+p {
+  font-size: 18px;
 }
 
 .first {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 1500px;
+  height: 105vh;
   background-color: black;
-  border-radius: 35px;
-}
-
-.background-logo img {
-  max-width: 250px;
-  padding-top: 200px;
-  height: 400px;
-  transform: scale(1, 1);
-}
-
-.background-logo {
-  display: flex;
-  justify-content: flex-start;
+  border-radius: 0 0 20px 20px;
   flex-direction: column;
   align-items: center;
 }
 
-.background-logo h1 {
+.first img {
+  width: auto;
+  height: 150px;
+  transform: scale(1, 1);
+}
+
+.first h1 {
   color: white;
-  font-size: 200px;
+  font-size: 6rem;
   margin: 30px 20px 0px 20px;
 }
 
-.banner {
-  transform: scale(-1, 1);
+.label {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  gap: 80px;
+}
 
-  height: 100px;
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
   background-color: rgb(232, 231, 231);
-  text-align: center;
+  overflow-x:hidden;
 }
 
 .banner img {
-  margin-top: 30px;
+  height: 40px;
+  padding: 20px 40px;
 }
