@@ -75,7 +75,7 @@ nav {
   bottom: 0;
 }
 
-.info1 {
+.info {
   gap: 15px;
   display: flex;
   flex-direction: column;
@@ -87,14 +87,11 @@ h2 {
   font-size: 48px;
 }
 
-.small-title {
-  font-size: 16px;
-}
 p {
   font-size: 18px;
 }
 
-.first {
+.hero {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -105,13 +102,13 @@ p {
   align-items: center;
 }
 
-.first img {
+.hero img {
   width: auto;
   height: 150px;
   transform: scale(1, 1);
 }
 
-.first h1 {
+h1 {
   color: white;
   font-size: 6rem;
   margin: 30px 20px 0px 20px;
@@ -130,10 +127,37 @@ p {
   justify-content: center;
   height: fit-content;
   background-color: rgb(232, 231, 231);
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 .banner img {
   height: 40px;
   padding: 20px 40px;
+}
+
+.flex-x {
+  display: flex;
+}
+
+.flex-y {
+  display: flex;
+  flex-direction: column;
+}
+
+.speech-mark {
+  font-size: 40px;
+  padding: 0 10px;
+}
+
+.quote {
+  gap: 17px;
+}
+
+.testimonials {
+  padding-top: 24px;
+}
+
+.service {
+  gap: 12px;
+  padding: 16px 0;
 }
