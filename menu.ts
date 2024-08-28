@@ -30,11 +30,11 @@ hamburger?.addEventListener("click", () => {
       navBar.style.backgroundColor = "transparent";
       navBar.style.backdropFilter = "none";
     }
-    document.body.style.overflowY = "hidden"; // Prevent scrolling when the menu is open
+    document.body.style.overflow = "hidden"; // Prevent scrolling when the menu is open
   } else {
     overlay.classList.remove("show");
     overlay.classList.add("hide");
-    document.body.style.overflowY = "auto"; // Allow scrolling when the menu is closed
+    document.body.style.overflow = "auto"; // Allow scrolling when the menu is closed
     if (navBar) {
       navBar.style.backgroundColor = "rgba(255, 208, 0, 0.86)";
       navBar.style.backdropFilter = "blur(10px)";
