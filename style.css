@@ -1,8 +1,10 @@
 body {
   height: 100vh;
+  width: 100vw;
   font-family: Basis Grotesque Pro, Arial, sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 p,
 h1,
@@ -16,9 +18,11 @@ h6 {
   margin-block-end: 0;
 }
 a {
-
   text-decoration: none;
 }
+
+/* header */
+
 ul {
   display: flex;
   justify-self: flex-end;
@@ -51,20 +55,86 @@ li {
 header {
   display: flex;
   justify-content: space-between;
-  border-radius: 32px;
   position: fixed;
   z-index: 1;
-  padding: 4px 16px;
-  margin: 24px;
-  background-color: #ffd000c9;
+  margin: 4%;
+  width: 90vw;
+  z-index: 1;
 }
 
- nav { 
-   }
+.nav-bar {
+  justify-content: space-between;
+  width: 100%;
+  padding: 6px 16px;
+  background-color: rgba(255, 208, 0, 0.86);
+  border-radius: 32px;
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 2;
+  transition: background-color 0.5s ease-out;
+}
 
 nav a {
-  color:black;
+  color: black;
 }
+
+.menu-overlay {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  /* z-index: 1; */
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  justify-content: center;
+  align-items: center;
+  margin: -5%;
+}
+
+nav {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  gap: 80px;
+  align-items: center;
+  justify-content: center;
+  /* padding-top: 40%; */
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.show {
+  animation: slide-in 0.5s forwards;
+}
+
+.hide {
+  animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Other */
+
 .info {
   gap: 24px;
   display: flex;
@@ -90,6 +160,9 @@ p {
   border-radius: 0 0 20px 20px;
   flex-direction: column;
   align-items: center;
+  color: white;
+  position: relative;
+  min-height: 300px;
 }
 
 .hero img {
@@ -98,8 +171,12 @@ p {
   transform: scale(1, 1);
 }
 
+.subtitle {
+  position: absolute;
+  bottom: 10%;
+}
+
 h1 {
-  color: white;
   font-size: 6rem;
   margin: 30px 20px 0px 20px;
 }
@@ -157,66 +234,56 @@ img {
   border-radius: 18px;
 }
 
-.card{
-  position:relative;
-
+.card {
+  position: relative;
 }
 
-
 .card-text-container {
-  position:absolute;
+  position: absolute;
   bottom: 10px;
   left: 10px;
   gap: 15px;
- 
-  
-  
 }
-
 
 .card-text {
   border-radius: 32px;
   padding: 4px 10px;
-  background-color: rgba(255,255,255, .7);
+  background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
-  
-  
-  
-  
 }
 
 .bold {
   font-weight: bold;
 }
 
-
-
-
 footer {
-background-color: black;
-border-radius: 20px 20px 0 0;
-color: white;
-padding: 120px 24px;
-gap: 130px;
-
+  background-color: black;
+  border-radius: 20px 20px 0 0;
+  color: white;
+  padding: 120px 24px;
+  gap: 130px;
 }
 
 .footer-text {
   gap: 40px;
 }
 
+.footer-text a {
+  color: white;
+  text-decoration: underline;
+}
 
 hr {
   border-top: 1px solid white;
-  width:100%;
+  width: 100%;
 }
 
-.work-details { 
+.work-details {
   gap: 16px;
-
-
 }
 
 .language {
   gap: 30px;
 }
+
+/* add media queries for correct navigation to be shown */

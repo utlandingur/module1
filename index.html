@@ -8,19 +8,27 @@
   </head>
   <body>
     <header>
-      <img src="logo.svg" />
-      <nav>
-        <ul>
-          <li><a href="https://www.kolibri.is/verkefni">Projects</a></li>
-          <!-- <li><a href="https://www.kolibri.is/thjonusta">Services</a></li>
-
-          <li><a href="https://www.kolibri.is/um-okkur">About us</a></li> -->
-        </ul>
-      </nav>
+      <div class="nav-bar flex-x">
+        <a href="/" target="_blank"><img src="logoNav.svg" /></a>
+        <img src="hamburger.svg" alt="hamburger icon" class="hamburger" />
+      </div>
+      <!-- Overlay will only appear when hamburger menu has been clicked -->
+      <!-- Overlay closes when hamburger menu has been clicked again -->
+      <div class="menu-overlay">
+        <nav class="flex-x">
+          <ul class="flex-y">
+            <li><a href="https://www.kolibri.is/verkefni">Projects</a></li>
+            <li><a href="https://www.kolibri.is/thjonusta">Services</a></li>
+            <li><a href="https://www.kolibri.is/um-okkur">About us</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
     <div class="hero">
-      <img src="logo.svg" />
+      <img src="logoHero.svg" />
       <h1>Kolibri</h1>
+      <div class="subtitle"><p>Digital Design</p></div>
     </div>
     <main>
       <div class="label">
@@ -44,7 +52,7 @@
         <section class="info">
           <p>What people say</p>
 
-          <h2>What our parners think</h2>
+          <h2>What our partners think</h2>
           <div class="flex-x testimonials">
             <p class="speech-mark">&ldquo;</p>
             <div class="flex-y quote">
@@ -155,6 +163,6 @@
     </footer>
 
     <!-- Load the script file for the menu overlay -->
-    <script src="./menu.ts"></script>
+    <script src="./menu.js"></script>
   </body>
 </html>
