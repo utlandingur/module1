@@ -168,6 +168,16 @@ nav {
   }
 }
 
+.language-link {
+  color: black;
+  gap: 0px;
+  padding-right: 10px;
+}
+
+.language-link li {
+  margin: 0;
+}
+
 /* Other */
 
 .info {
