@@ -285,3 +285,37 @@ hr {
 }
 
 /* add media queries for correct navigation to be shown */
+
+@media screen and (min-width: 860px) {
+  h2 {
+    font-size: 96px;
+  }
+  .info {
+    margin: auto;
+    width: 700px;
+
+  }
+  .label {
+    gap: 140px;
+  }
+  footer {
+    padding: 160px 30%;
+  }
+}
+
+
+@media screen and (min-width: 860px) {
+
+.nav-bar {
+  display: none;
+}
+
+}
+
+@media screen and (max-width: 1280px){
+
+
+
+
+  
+}

@@ -14,7 +14,7 @@ const hamburger = document.querySelector(
   ".hamburger"
 ) as HTMLImageElement | null;
 
-// For each hamburger icon, add an event listener, so we know when it is clicked
+// For the hamburger icon, add an event listener, so we know when it is clicked
 
 hamburger?.addEventListener("click", () => {
   // If the menu is displayed, set the display to none, otherwise set it to block
@@ -40,7 +40,7 @@ hamburger?.addEventListener("click", () => {
       navBar.style.backdropFilter = "blur(10px)";
     }
     // Wait for the animation to finish before setting the display
-    setTimeout(() => {
+    setTimeout(() => { 
       overlay.style.display = "none";
     }, 500);
   }

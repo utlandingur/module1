@@ -5,7 +5,7 @@ var overlay = document.querySelector(".menu-overlay");
 var navBar = document.querySelector(".nav-bar");
 // Grab the hamburger icon
 var hamburger = document.querySelector(".hamburger");
-// For each hamburger icon, add an event listener, so we know when it is clicked
+// For the hamburger icon, add an event listener, so we know when it is clicked
 hamburger === null || hamburger === void 0 ? void 0 : hamburger.addEventListener("click", function () {
     // If the menu is displayed, set the display to none, otherwise set it to block
     // This will toggle the display of the menu overlay
