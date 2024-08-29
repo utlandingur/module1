@@ -58,7 +58,6 @@ header {
   z-index: 1;
   margin: 5%;
   width: 90%;
-  z-index: 1;
 }
 
 .nav-bar {
@@ -73,8 +72,33 @@ header {
   transition: background-color 0.5s ease-out;
 }
 
+.desktop-links {
+  background-color: rgba(255, 208, 0, 0.86);
+  border-radius: 32px;
+  width: 319px;
+}
 nav a {
   color: black;
+}
+
+.desktop-nav {
+  display: none;
+  width: 100%;
+}
+.desktop-nav nav a {
+  color: black;
+}
+
+.desktop-nav nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.icon-color {
+  border-radius: 50%;
+  padding: 8px;
+  background-color: #ffd100;
 }
 
 .menu-overlay {
@@ -96,7 +120,7 @@ nav {
   justify-content: center;
 }
 
-nav ul {
+.mobile-links {
   gap: 80px;
   align-items: center;
   justify-content: center;
@@ -293,7 +317,6 @@ hr {
   .info {
     margin: auto;
     width: 700px;
-
   }
   .label {
     gap: 140px;
@@ -303,19 +326,11 @@ hr {
   }
 }
 
-
 @media screen and (min-width: 860px) {
-
-.nav-bar {
-  display: none;
-}
-
-}
-
-@media screen and (max-width: 1280px){
-
-
-
-
-  
+  .nav-bar {
+    display: none;
+  }
+  .desktop-nav {
+    display: block;
+  }
 }
