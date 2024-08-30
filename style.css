@@ -69,6 +69,9 @@ header {
   transition: background-color 0.5s ease-out;
 }
 
+
+
+/* transition of nav bar feature */
 .desktop-links {
   display: flex;
   justify-content: space-between;
@@ -79,7 +82,7 @@ header {
   height: 55px;
   font-size: 18px;
   color: black;
-  transition: width 0.5s ease-in
+  transition: width 0.5s ease-in;
 
 }
 
@@ -91,6 +94,8 @@ header {
 .desktop-links:hover {
   width: 380px;
 }
+/* transition of nav barfeature */
+
 nav a {
   color: black;
 }
@@ -369,6 +374,7 @@ hr {
   footer {
     padding: 160px 30%;
   }
+
 }
 
 @media screen and (min-width: 450px) {
@@ -378,4 +384,5 @@ hr {
   .desktop-nav {
     display: block;
   }
+  
 }
