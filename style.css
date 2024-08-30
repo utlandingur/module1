@@ -35,8 +35,6 @@ ul {
   transition: all 0.5s ease-out;
 }
 
-
-
 nav li:hover {
   text-decoration: underline;
   font-weight: bold;
@@ -69,8 +67,6 @@ header {
   transition: background-color 0.5s ease-out;
 }
 
-
-
 /* transition of nav bar feature */
 .desktop-links {
   display: flex;
@@ -83,13 +79,11 @@ header {
   font-size: 18px;
   color: black;
   transition: width 0.5s ease-in;
-
 }
 
 .desktop-links a:hover {
   font-size: 19px;
 }
-
 
 .desktop-links:hover {
   width: 380px;
@@ -135,13 +129,13 @@ nav a {
   flex-direction: column;
   position: fixed;
   /* z-index: 1; */
-  width: 100vw;
-  height: 100vh;
+  width: 102vw;
+  height: 102vh;
   background-color: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(10px);
   justify-content: center;
   align-items: center;
-  margin: -5%;
+  margin: -2%;
 }
 
 nav {
@@ -296,9 +290,10 @@ img {
   gap: 15px;
 }
 
-.projects {
+.cards {
   justify-content: center;
   align-items: center;
+  gap: 24px;
 }
 
 .card {
@@ -374,7 +369,6 @@ hr {
   footer {
     padding: 160px 30%;
   }
-
 }
 
 @media screen and (min-width: 450px) {
@@ -384,5 +378,4 @@ hr {
   .desktop-nav {
     display: block;
   }
-  
 }

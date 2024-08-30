@@ -40,7 +40,7 @@ hamburger?.addEventListener("click", () => {
       navBar.style.backdropFilter = "blur(10px)";
     }
     // Wait for the animation to finish before setting the display
-    setTimeout(() => { 
+    setTimeout(() => {
       overlay.style.display = "none";
     }, 500);
   }
